@@ -3,8 +3,9 @@
     <head>
 	     <meta charset="UTF-8">
 		 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-		 <title>Driving Quiz</title>
-		 <link rel="stylesheet" href="home.css" media="screen">
+		 <title>High Score</title>
+		 <link rel="stylesheet" href="highScore.css" media="screen">
+		  <link rel="stylesheet" href="home.css" media="screen">
 		 <link rel="preconnect" href="https://fonts.googleapis.com">
           <link href="./fonts/fontawesome-free-6.0.0/css/fontawesome.css" rel="stylesheet">
            <link href="./fonts/fontawesome-free-6.0.0/css/brands.css" rel="stylesheet">
@@ -13,11 +14,12 @@
 	</head>
 	<body>
 		<div class="container">
-			<div id="home" class="flex-column">
-				<h1>Are You Ready?</h1>
-				<a href="quiz.html" class="btn">Play</a>
-				<a href="highScore.html" id="highScore-btn" class="btn">High Score<i class="fas fa-crown"></i></a>
+			<div id="highScores" class="flex-column">
+				<h1 id="finalScore">LeaderBoard</h1>
+				<ul id="highScoreList"></ul>
+				<a href="home.html" class="btn">Go Home<i class="fas fa-home"></i></a>
+				
 			</div>
 		</div>
+		<script src="highScore.js"></script>
 	</body>
-</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	     <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		 <title>Driving Quiz</title>
+		 <link rel="stylesheet" href="result.css" media="screen">
+		  <link rel="stylesheet" href="home.css" media="screen">
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link href="./fonts/fontawesome-free-6.0.0/css/fontawesome.css" rel="stylesheet">
+           <link href="./fonts/fontawesome-free-6.0.0/css/brands.css" rel="stylesheet">
+		   <link href="./fonts/fontawesome-free-6.0.0/css/solid.css" rel="stylesheet">
+		 
+	</head>
+	<body>
+		<div class="container">
+			<div id="result" class="flex-column">
+				<h1 id="finalScore">0<h1>
+				<form class="end-form-container">
+					<h2 id="end-text">Enter your name below to save your score!</h2>
+					<input type="text" name="name" id="username" placeholder="Enter your name">
+					<button class="btn" id="saveScoreBtn" type="submit"
+					onclick="saveHighScore(event)" disabled>Save</button>
+				</form>
+				<div class="option">
+					<a href="quiz.html" class="btn">Play Again</a>
+					<a href="home.html" class="btn">Go Home<i class="fas fa-home"></i></a>
+			    </div>
+			</div>
+		</div>
+		<script src="result.js"></script>
+	</body>
